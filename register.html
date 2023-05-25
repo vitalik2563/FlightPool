@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="panel">
+        <div class="content">
+            <a href="index.html">
+                <img class="test-0-logo" src="img/logo.png" alt="Логотип  компании"></a>
+            <nav>
+                <a class="test-0-nav-1" href="index.html#promos">Акции</a>
+                <a class="test-0-nav-2" href="index.html#search">Поиск</a>
+                <a class="test-0-nav-3" href="register.html">Регистрация на рейс</a>
+                <a class="test-0-nav-4" href="profile.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Регистрация -->
+    <section class="panel" id="register">
+        <div class="content">
+            <h1>Добро пожаловать</h1>
+            <h3>Пожалуйста, заполните следующие поля</h3>
+            <form action="">
+                <input type="text"  placeholder="Логин или e-mail">
+                <input type="text" placeholder="Фамилия" class="test-2-last">
+                <input type="text" placeholder="Имя" class="test-2-name">
+                <input type="text" placeholder="Номер документа" class="test-2-doc">
+                <input type="text" placeholder="Телефон" class="test-2-phone">
+                <input type="password" placeholder="Пароль" class="test-2-pass"></input>
+                <input type="password" placeholder="Повторите пароль" class="test-2-pass2"></input>
+                <button class="test-2-btn" id="openDialog" onclick="window.open('login.html','_blank')">Зарегистрироваться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Модальное окно приветствия
+    <dialog>
+        <p>Вы успешно зарегестрировались! Авторизуйтесь на странице входа</p>
+        <button id="closeDialog">Перейти к странице входа</button>
+    </dialog>
+
+    <script>
+        var dialog=document.querySelector('dialog');
+        document.querySelector('#openDialog').onclick=function(){
+            dialog.showModal();
+        }
+        document.querySelector('#closeDialog').onclick=function(){
+            dialog.close();
+            parent.location='login.html';
+        }
+    </script> -->
+
+    <!-- Подвал -->
+<footer class="panel">
+    <div class="content">
+        <h3><a href="tel:88001001010">8 (800) 100-10-10</a></h3>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="login.html">Войти в личный кабинет</a>
+            <a href="register.html">Зарегестрироваться</a>
+            <a href="http://xxxxxx-m1.wsr.ru/contact">Контакты</a>
+            <a href="http://xxxxxx-m1.wsr.ru/news">Новости</a>
+            <a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>
+            <a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,757 @@
+/* Подключение шрифта */
+
+@font-face {
+    font-family: "GardensC";
+    src: url("../font/GardensC.otf");
+}
+
+/* Настройка всех элементов документа */
+*{
+    font-family: "GardensC";
+    margin: 0; 
+    padding: 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+/* Настройки содержимого тела документа */
+body{
+    position: relative;
+}
+
+div.content{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Общие настройки для блоков главной страницы */
+section.panel{
+    width: 100%;
+    padding: 0 130;
+    float: none;
+    overflow: hidden;
+}
+
+section h1{
+    color: #1a203a;
+    font-size: 54pt;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Общие настройки для заголовков блоков главной страницы */
+
+/* Оформление для блока стартовый экран */
+section#first-page{
+    height: 120vh;
+    color: #fff;
+    background-image: url("../img/first-page-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #1a203a;
+}
+
+header img{
+    width: 200px;
+    float: left
+}
+
+header nav{
+    text-align: right;
+    padding-top: 20px;
+    font-size: 16pt;
+    color: #fff;
+}
+
+header nav>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav>a:hover{
+    text-decoration: underline;
+}
+
+/* Оформление секции инфографика */
+section#info{
+    background: transparent;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+section#info h2{
+    text-align: center;
+    font-style: italic;
+}
+
+section#info form{
+    padding: 30px;
+}
+
+section#info button, section#info input[type=text], section#search input[type=text], section#search button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+}
+
+section#info button{
+    background-color: #ff9000;
+    position: relative;
+    margin-top: 50px;
+    left: 30%;
+    height: 80px;
+    width: 40%;
+    font-size: 16pt;
+    color: #fff;
+}
+
+section#info img{
+    position: relative;
+    left: 20%;
+}
+
+section#info input[type=text]{
+    padding-left: 10px;
+    height: 50px;
+    width: 49%;
+    font-size: 12pt;
+}
+
+/* Секция доверия */
+section#trust{
+    color: #fff;
+    margin-bottom: 30px;
+    min-height: 90vh;
+    background: url("../img/about-us-bg.png") center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+section#trust .review{
+    background-color: #c4c7cc;
+    border: 1px solid #1a203a;
+    border-radius: 6px;
+    height: 30%;
+    width: 90%;
+    margin: 30px auto;
+    padding: 50px;
+    opacity: 0.8;
+    color: #1a203a;
+}
+
+section#trust .review h3{
+    font-size: 18pt;
+    padding-bottom: 20px;
+}
+
+section#trust .review p.comment{
+    font-size: 14pt;
+    padding-bottom: 20px;
+}
+
+section#trust .review p.autor{
+    text-align: right;
+}
+
+/* Оформление секции поиск */
+section#search{
+    padding-top: 15%;
+    min-height: 70vh;
+    background: url("../img/search-bg.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+section#search button, section#search input[type=text]{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+}
+
+section#search button{
+    background-color: #1a203a;
+    margin-top: 50px;
+    position: relative;
+    left: 30%;
+    height: 80px;
+    width: 40%;
+    font-size: 16pt;
+    color: #fff;
+}
+
+section#search input[type=text]{
+    padding-left: 10px;
+    height: 50px;
+    width: 19.3%;
+    font-size: 12pt;
+}
+
+/* Секция акции */
+section#promos{
+    padding: 50px;
+    min-height: 90vh;
+    background-color: #ff9000;
+}
+
+section#promos .promo{
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+
+section#promos .promo img{
+    width: 100%;
+    padding-top: 30px;
+}
+
+section#promos .promo h3{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18pt;
+}
+
+section#promos .promo p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section#promos .promo button{
+    background-color: #1a203a;
+    border: none;
+    color: #c4c7cc;
+    text-align: center;
+    height: 50px;
+    text-decoration: none;
+    font-size: 14pt;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    bottom: 0px;
+}
+
+/* Секция подписка */
+
+section#sub {
+    padding: 100px;
+    min-height: 60vh;
+    background-color: #fff;
+}
+
+section#sub h1{
+    font-size: 54pt;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section#sub button, section#sub input[type=text]{
+    color: #c4c7cc;
+    padding: 16px 64px;
+    text-decoration: none;
+    font-size: 14pt;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 20px;
+    border: 3px solid #1a203a;
+}
+
+section#sub button{
+    background-color: #ff9000;
+    border: none;
+    color: #fff;
+}
+
+/* Подвал */
+footer{
+    height: 440px;
+    width: 100%;
+    background: url("../img/background-footer.png") center no-repeat;
+    background-size: 100% 100%;
+    padding-top: 250px;
+    color: #fff;
+}
+
+footer h3{
+    font-size: 20pt;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer nav{
+    margin-left: 13%;
+}
+
+/* Вход в личный кабинет */
+
+section#login{
+    background: transparent;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+section#login h3{
+    text-align: center;
+    font-style: italic;
+}
+
+section#login form{
+    padding: 30px;
+    margin: 0 auto;
+}
+
+section#login input[type=text], section#login input[type=password], section#login button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    height: 80px;
+    width: 49%;
+    font-size: 14pt;
+}
+
+section#login button{
+    background-color: #ff9000;
+    margin-top: 50px;
+    color: #fff;
+}
+
+section#login button.register{
+    background-color: #fff;
+    margin-top: 50px;
+    color: #1a203a;
+}
+
+section#login input[type=text], section#login input[type=password]{
+    padding-left: 10px;
+}
+
+section#login button:hover{
+    border: 3px solid #1a203a;
+}
+
+/* Оформление страницы регистрации */
+section#register{
+    background: transparent;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+section#register h3{
+    text-align: center;
+    font-style: italic;
+}
+
+section#register form{
+    padding: 30px;
+    margin: 0 auto;
+}
+
+section#register button, section#register input[type=text], section#register input[type=password]{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    height: 80px;
+    width: 100%;
+    font-size: 14pt;
+}
+
+section#register button{
+    background-color: #ff9000;
+    margin-top: 50px;
+    color: #fff;
+}
+
+section#register input[type=text], section#register input[type=password]{
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+section#register button:hover{
+    border: 3px solid #1a203a;
+}
+
+dialog{
+    background: rgba(255, 255, 255, 0.9);
+    min-width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+dialog p{
+    font-size: 16pt;
+}
+
+dialog button{
+    cursor: pointer;
+    margin-left: 75px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 14pt;
+    border-radius: 6px;
+}
+
+/* Блок профиля */
+section#personal_data{
+    background: transparent;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+section#personal_data h3{
+    text-align: center;
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 20pt;
+}
+
+/* Блок бронирования в профиле */
+section#reserv{
+    color: #fff;
+    margin-bottom: 30px;
+    min-height: 90vh;
+    background: url('../img/about-us-bg.png') center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+section#reserv h2{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22pt;
+    color: #ff9000;
+}
+
+section#reserv .reserv-n{
+    background-color: #c4c7cc;
+    border: 1px solid #1a203a;
+    border-radius: 6px;
+    height: 30%;
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    opacity: 0.8;
+    color: #1a203a;
+}
+
+section#reserv .reserv-n h3{
+    font-size: 20pt;
+    padding-bottom: 15px;
+}
+
+section#reserv .reserv-n h4{
+    font-size: 16pt;
+    padding-bottom: 5px;
+}
+
+section#reserv .reserv-n button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    min-height: 40px;
+    width: 100%;
+    font-size: 14pt;
+    padding: 20px;
+    margin: 30px auto 0;
+    cursor: pointer;
+}
+
+/* Результаты поиска */
+section#search-result{
+    color: #fff;
+    margin-bottom: 30px;
+    min-height: 90vh;
+    background: url('../img/about-us-bg.png') center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+section#search-result .search-result-n{
+    background-color: #c4c7cc;
+    border: 1px solid #1a203a;
+    border-radius: 6px;
+    height: 30%;
+    width: 90%;
+    margin: 30px auto;
+    padding: 10%;
+    opacity: 0.8;
+    color: #1a203a;
+}
+
+section#search-result .search-result-n h3{
+    font-size: 20pt;
+    padding-bottom: 20px;
+}
+
+section#search-result .search-result-n input{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    min-height: 40px;
+    width: 100%;
+    font-size: 14pt;
+    padding: 10px;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+section#search-result .search-result-n td.btw{
+    border-bottom: 1px solid #1a203a;
+}
+
+section#search-result button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    height: 80px;
+    width: 50%;
+    font-size: 14pt;
+    background-color: #ff9000;
+    margin-left: 25%;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Страница бронирования */
+section#booking{
+    color: #fff;
+    margin-bottom: 30px;
+    min-height: 90vh;
+    background: url('../img/about-us-bg.png') center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+section#booking .booking{
+    background-color: #c4c7cc;
+    border: 1px solid #1a203a;
+    border-radius: 6px;
+    height: 30%;
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    opacity: 0.8;
+    color: #1a203a;
+}
+
+section#booking .pass input, button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    min-height: 40px;
+    width: 100%;
+    font-size: 14pt;
+    padding: 10px;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+section#booking .booking td.btw{
+    font-size: 16pt;
+    padding-bottom: 20px;
+}
+
+section#booking .booking td{
+    padding: 10px;
+}
+
+section#booking button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    min-height: 80px;
+    width: 50%;
+    font-size: 14pt;
+    background-color: #ff9000;
+    margin-left: 25%;
+    cursor: pointer;
+    color: #fff;
+}
+
+section#booking .pass{
+    background-color: #c4c7cc;
+    border: 1px solid #1a203a;
+    border-radius: 6px;
+    height: 30%;
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    opacity: 0.8;
+    color: #1a203a;
+}
+
+section#booking form{
+    padding: 30px;
+    margin: 0 auto;
+}
+
+section#booking .pass    input[type=text]{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14pt;
+    width: 100%;
+}
+
+section#booking .pass button{
+    background-color: #1a203a;
+    margin: 10px;
+    width: 47%;
+    color: #fff;
+}
+
+section#booking h3{
+    text-align: center;
+    font-size: 20pt;
+    padding: 20px;
+    margin: 20px;
+    color: #1a203a;
+}
+
+/* Настройка бронирования */
+section#booking-man{
+    color: #fff;
+    margin-bottom: 30px;
+    min-height: 90vh;
+    background: url('../img/about-us-bg.png') center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+section#booking-man .booking-man{
+    border: 1px solid #1a203a;
+    border-radius: 6px;
+    height: 30%;
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #fff;
+    opacity: 0.7;
+    color: #1a203a;
+}
+
+section#booking-man .pass button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    min-height: 40px;
+    width: 100%;
+    font-size: 14pt;
+    padding: 10px;
+    margin: 10px auto 0;
+    cursor: pointer;
+    background-color: #ff9000;
+    color: #fff;
+}
+
+section#booking-man .booking-man td,tr, .pass td,tr{
+    padding: 10px;
+}
+
+section#booking-man .booking-man table, .pass table{
+    margin: 0 auto;
+}
+
+section#booking-man .booking-man table{
+    width: 100%;
+}
+
+section#booking-man .pass{
+    border: 1px solid #1a203a;
+    border-radius: 6px;
+    height: 30%;
+    width: 100%;
+    margin: 30px auto;
+    padding: 40px;
+    color: #1a203a;
+    text-align: center;
+    background-color: #c4c7cc;
+    opacity: 0.8;
+}
+
+section#booking-man h2{
+    text-align: center;
+    font-size: 20pt;
+    padding: 20px;
+    margin: 20px;
+    color: #ff9000;
+    font-style: italic;
+}
+
+section#booking-man h3{
+    font-size: 18pt;
+    color: #1a203a;
+    text-align: center;
+}
+
+/* Страница выбор места */
+section#seat{
+    color: #1a203a;
+    margin-bottom: 30px;
+    min-height: 70vh;
+    background: url('../img/about-us-bg.png') center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    font-size: 16pt;
+}
+
+section#seat table{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #1a203a;
+    background-color: #c4c7cc;
+    opacity: 0.8;
+}
+
+section#seat td{
+    padding: 1%;
+    text-align: center;
+}
+
+section#seat td.seat:hover{
+    background-color: #ff9000;
+    color: #fff;
+}
+
+section#seat td.bold{
+    font-weight: bold;
+    text-align: center;
+}
+
+section#seat button{
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #1a203a;
+    min-height: 40px;
+    width: 60%;
+    font-size: 14pt;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20%;
+    cursor: pointer;
+}

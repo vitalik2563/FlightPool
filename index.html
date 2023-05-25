@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>FlightPool</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="panel">
+        <div class="content">
+            <a href="#">
+                <img class="test-0-logo" src="img/logo.png" alt="Логотип  компании"></a>
+            <nav>
+                <a class="test-0-nav-1" href="#promos">Акции</a>
+                <a class="test-0-nav-2" href="#search">Поиск</a>
+                <a class="test-0-nav-3" href="register.html">Регистрация на рейс</a>
+                <a class="test-0-nav-4" href="profile.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Стартовый экран -->
+<section class="panel" id="first-page">
+    <div class="content">
+        <img src="" alt="">
+    </div>
+</section>
+
+    <!-- Инфографика -->
+    <section class="panel" id="info">
+        <div class="content">
+            <h1>Экономьте вместе с нами</h1>
+            <h2>Выберите возможные параметры и следите за изменгениями</h2>
+            <form action="">
+                <input type="text" placeholder="Когда">
+                <input type="text" placeholder="Сколько">
+                <button>Поиск</button>
+               </form>
+               <img src="img/linejnyj_grafik.png" alt="Инфографика">
+        </div>
+    </section>
+
+    <!-- Секция о доверии -->
+    <section class="panel" id="trust">
+        <div class="content">
+            <h1>Наши путешественники</h1>
+            <div class="review">
+                <h3>Просто хорошая, удобная авиакомпания</h3>
+                <p class="comment">Все было очень удобно, на каждом этапе. Гибкий выбор услуг при покупке билетов на сайте. Оба раза при электронной регистрации попались удобные места, случайность, но приятно</p>
+                <p class="autor">Иван Иванов</p>
+            </div>
+            <div class="review">
+                <h3>Хорошо</h3>
+                <p class="comment">Летела на новом airbus 320 neo. Новый, красивый самолет. Обслуживание хорошее. Взлет и посадка прошли</p>
+                <p class="autor">Иванна Ивановна</p>
+            </div>
+            <div class="review">
+                <h3>Хорошая авиакомпания</h3>
+                <p class="comment">Вылетел из Москвы 8 января, в конце праздников. Приложение s7 уведомляло о начале регистрации и вылете. Рейс не задержали, прилетел в Ростов раньше графика.</p>
+                <p class="autor">Семен Семенов</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Блок поиска -->
+<section id="search" class="panel">
+    <div class="content">
+        <form action="">
+            <input type="text" placeholder="откудо" class="test-0-fd">
+            <input type="text" placeholder="куда" class="test-0-fa">
+            <input type="text" placeholder="вылет" class="test-0-fdt">
+            <input type="text" placeholder="прилет" class="test-0-fat">
+            <input type="text" placeholder="количество" class="test-0-fnp">
+            <button class="test-0-fbs" onclick="window.open('search.html','_blank')">Поиск</button>
+        </form>
+    </div>
+</section>
+
+<!-- Акции -->
+<section id="promos" class="panel">
+    <div class="content">
+        <h1>Наши акции</h1>
+        <div class="promo">
+            <img src="img/promotion1.jpg" alt="Акция 1">
+            <h3>Returning and Changing Your Tickets</h3>
+            <p>The pandemic has changed many travelers’ plans, but we know that it will not last forever. 
+                Once all of this is over, we will continue exploring this world the way we used to. 
+                Special rules that have been developed for this challenging situation will help you cancel your trip
+                or postpone it until later.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="promo">
+            <img src="img/promotion2.jpg" alt="Акция 2">
+            <h3>Best offers</h3>
+            <p>To see again the streets that witnessed so much. To hug your beloved ones and look back to see
+                what you’ve come through. And to think of new dreams that will be so special!</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="promo">
+            <img src="img/promotion3.jpg" alt="Акция 3">
+            <h3>See you more often</h3>
+            <p>Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+                see your loved ones more often. Choose our company to fly to where you are always expected.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="promo">
+            <img src="img/promotion4.jpg" alt="Акция 4">
+            <h3>Everything is on again</h3>
+            <p>From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+                a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week.</p>
+            <button>Подробнее</button>
+        </div>
+    </div>
+</section>
+
+<!-- Подписка на акции -->
+<section class="panel" id="sub">
+    <div class="content">
+        <h1>Будь в курсе</h1>
+        <form action="">
+            <input placeholder="Введите свой e-mail" type="text">
+            <button>Подписаться</button>
+        </form>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer class="panel">
+    <div class="content">
+        <h3><a href="tel:88001001010">8 (800) 100-10-10</a></h3>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="login.html">Войти в личный кабинет</a>
+            <a href="register.html">Зарегестрироваться</a>
+            <a href="http://xxxxxx-m1.wsr.ru/contact">Контакты</a>
+            <a href="http://xxxxxx-m1.wsr.ru/news">Новости</a>
+            <a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>
+            <a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

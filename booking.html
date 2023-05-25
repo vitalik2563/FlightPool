@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Страница бронирования</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="panel">
+        <div class="content">
+            <a href="index.html">
+                <img class="test-0-logo" src="img/logo.png" alt="Логотип  компании"></a>
+            <nav>
+                <a class="test-0-nav-1" href="index.html#promos">Акции</a>
+                <a class="test-0-nav-2" href="index.html#search">Поиск</a>
+                <a class="test-0-nav-3" href="register.html">Регистрация на рейс</a>
+                <a class="test-0-nav-4" href="profile.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Блок бронирование -->
+    <section class="panel" id="booking">
+        <div class="content">
+            <h1>Выбранные рейсы</h1>
+            <div class="booking">
+                <table>
+                    <thead>
+                        <th>№</th>
+                        <th>Название города вылета</th>
+                        <th>Название аэропорта вылета</th>
+                        <th>Дата и время вылета</th>
+                        <th>Название города назначения</th>
+                        <th>Название аэропорта назначения</th>
+                        <th>Время прилета</th>
+                        <th>Стоимость</th>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="8" class="btw">Туда</td></tr>
+                        <tr>
+                            <td>SU 1192</td>
+                            <td>Москва</td>
+                            <td>Шереметьево</td>
+                            <td>8/10/2020 15-00</td>
+                            <td>Казань</td>
+                            <td>Казань</td>
+                            <td>16-30</td>
+                            <td>4500</td>
+                        </tr>
+                        <tr><td colspan="8" class="btw">Обратно</td></tr>
+                        <tr>
+                            <td>SU 1192</td>
+                            <td>Москва</td>
+                            <td>Шереметьево</td>
+                            <td>8/10/2020 15-00</td>
+                            <td>Казань</td>
+                            <td>Казань</td>
+                            <td>16-30</td>
+                            <td>4500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1>Информация о пассажирах</h1>
+            <div class="pass">
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Фамилия">
+                    <input type="text" placeholder="Дата рождения">
+                    <input type="text" placeholder="Номер документа">
+                    <button>Добавить пассажира</button>
+                    <button>Удалить пассажира</button>
+                </form>
+            </div>
+           <h3>Стоимость вашего заказа</h3>
+           <h1>9000 рублей</h1>
+           <button onclick="window.open('booking_management.html','_blank')">Оформить</button>
+        </div>
+    </section>
+
+<!-- Подвал -->
+<footer class="panel">
+    <div class="content">
+        <h3><a href="tel:88001001010">8 (800) 100-10-10</a></h3>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="login.html">Войти в личный кабинет</a>
+            <a href="register.html">Зарегестрироваться</a>
+            <a href="http://xxxxxx-m1.wsr.ru/contact">Контакты</a>
+            <a href="http://xxxxxx-m1.wsr.ru/news">Новости</a>
+            <a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>
+            <a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
